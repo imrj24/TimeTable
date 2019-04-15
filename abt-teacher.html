@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="css/abt-teach-css.css">
+
+  <script type="text/javascript">
+   // Variable to count number of attempts.
+  // Below function Executes on click of login button.
+      function Validate(un,pw){
+        //     var username = un.value;
+          //  var password = pw.value;
+    //  if ( username == "admin" && password == "12345"){
+      //      alert ("Login successfully");
+            window.open("admin.html");
+  // Redirecting to other page.
+
+      }
+  /*    else{
+
+            alert("Invalid Credentials ");
+
+
+         }
+       }
+     }*/
+  </script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark  nav-col navbar-default">
+  <a class="navbar-brand" href="index.html">
+    <img src="image/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+    <span style="color:#FFFF66;font-size:25px">Time Table<span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><span style="color:#FFFF66">Home</span> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" role="button" data-target="#Admin-modal"><span style="color:#FFFF66">Admin Login</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="#" data-toggle="modal" role="button" data-target="#teacher-modal"><span style="color:#FFFF66">Teacher Login</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span style="color:#FFFF66">  Department</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="about-d.html">About Department</a>
+          <a class="dropdown-item" href="#">Teacher Details</a>
+
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn but-col my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<!--modal-->
+<div class="modal fade" id="Admin-modal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header head-col">
+        <img id="imlo"  src="image/logo.png" width="100px" height="100px" alt="">
+        <br><h3 class="head">Admin Login</h3>
+      </div>
+
+      <div id="div-form">
+        <form class="" action="index.html" method="post">
+          <div class="modal-body">
+          <div class="">
+            <span>Type your Username and password here</span>
+          </div>
+          <input type="text" class="form-control" placeholder="UserName" id="username" name="" value="" required>
+          <input type="password" class="form-control" placeholder="password" id="password" name="" value="" required>
+          <div class="checkbox rem">
+            <label>
+              <input type="checkbox" name="" value="">Remember me
+            </label>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+
+              <div class="col-sm-6" class="signup">
+                  <button type="submit" class="btn btn-danger btn-sm btn-block" data-dismiss="modal">Cancel</button>
+              </div>
+              <div class="col-sm-6">
+                  <button  class="btn btn-primary btn-sm btn-block"  id="submit" onclick="Validate(username,password)">Login</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+        <!--tea cher modal-->
+        <div class="modal fade" id="teacher-modal">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header head-col">
+                <img id="imlo"  src="image/logo.png" width="100px" height="100px" alt="">
+                <br><h3 class="head2">Teacher Login</h3>
+              </div>
+
+              <div id="div-form">
+                <form class="" action="index.html" method="post">
+                  <div class="modal-body">
+                  <div class="">
+                    <span>Type your email and password here</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="email" name="" value="" required>
+                  <input type="password" class="form-control" placeholder="password" name="" value="" required>
+                  <div class="checkbox rem">
+                    <label>
+                      <input type="checkbox" name="" value="">Remember me
+                    </label><br>
+                    <a href="tregister.html class="signup">Register</a>
+                  </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row">
+
+                      <div class="col-sm-6" class="signup">
+                          <button type="submit" class="btn btn-danger btn-sm btn-block" data-dismiss="modal">Cancel</button>
+                      </div>
+                      <div class="col-sm-6">
+                          <button type="submit" class="btn btn-primary btn-sm btn-block">Login</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--card-->
+        <div class="container ">
+          <div class="row border">
+            <div class="col-md-4">
+
+              <div class="card text-white bg-primary mb-3">
+                <img class="card-img-top" src="image/teacher/rb.jpg" width="20px" height="300px" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">DR. RAMESH BABU D. R.</h5>
+                <ul>
+                  <li>Professor & Head</li>
+                  <li>Qualification M.Tech, Ph.D, LMISTE</li>
+                  <li>Rb-cs@dayanandasagar.edu</li>
+                  <li>AREA:Image Processing </li>
+
+                </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+
+              <div class="card text-white bg-primary mb-3">
+                <img class="card-img-top" src="image/teacher/amutha.jpg" width="30px" height="300px" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Dr. Amutha.S</h5>
+                <ul>
+                  <li>Professor</li>
+                  <li>M.Tech., Ph.D, LMISTE</li>
+                  <li>amutha-cs@dayanandasagar.edu</li>
+                  <li>AREA:Image Processing BigData Analysis</li>
+
+
+                </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+
+              <div class="card text-white bg-primary mb-3">
+                <img class="card-img-top" src="image/teacher/shubha.jpg" width="30px" height="300px" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">DR. SHUBHA BHAT</h5>
+                <ul>
+                  <li>Associate Professor</li>
+                  <li>M.Tech., Ph.D, LMISTE</li>
+                  <li>shubha-cs@dayanandasagar.edu</li>
+                  <li>AREA:Image Processing and Computer Vision</li>
+
+
+                </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border">
+              <div class="col-md-4">
+
+                <div class="card text-white bg-primary mb-3">
+                  <img class="card-img-top" src="image/teacher/mohd.jpg" width="20px" height="300px" alt="Card image cap">
+                  <div class="card-body">
+                  <h5 class="card-title">DR. MOHD. TAJUDDIN</h5>
+                  <ul>
+                    <li>Professor & Head</li>
+                    <li>Qualification M.Tech, Ph.D, LMISTE</li>
+                    <li>Rb-cs@dayanandasagar.edu</li>
+                    <li>AREA:Image Processing </li>
+
+                  </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+
+                <div class="card text-white bg-primary mb-3">
+                  <img class="card-img-top" src="image/teacher/deepak.jpg" width="30px" height="300px" alt="Card image cap">
+                  <div class="card-body">
+                  <h5 class="card-title">Dr. Deepak G</h5>
+                  <ul>
+                    <li>Assistant Professor</li>
+                    <li>B.E, M.Tech, Ph.D</li>
+                    <li>deepak-cs@dayanandasagar.edu</li>
+                    <li>Cloud Computing Network Security </li>
+
+
+                  </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+
+                <div class="card text-white bg-primary mb-3">
+                  <img class="card-img-top" src="image/teacher/shubha.jpg" width="30px" height="300px" alt="Card image cap">
+                  <div class="card-body">
+                  <h5 class="card-title">DR. SHUBHA BHAT</h5>
+                  <ul>
+                    <li>Associate Professor</li>
+                    <li>M.Tech., Ph.D, LMISTE</li>
+                    <li>shubha-cs@dayanandasagar.edu</li>
+                    <li>AREA:Image Processing and Computer Vision</li>
+
+
+                  </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        <footer class="footer_area">
+          <div class="container box_1620">
+            <div class="footer_inner p_120">
+              <img src="image/logo.png" alt="" width="70px">
+              <ul class="list f_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Admin Login</a></li>
+                <li><a href="#">Teacher Login </a></li>
+                <li><a href="#">About Teacher</a></li>
+                <li><a href="about-d.html">About DEPARTMENT</a></li>
+
+              </ul>
+              <img src="image/footer.png" alt="" width="200px">
+              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+  </body>
+</html>
