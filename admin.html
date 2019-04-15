@@ -4,32 +4,34 @@
     <meta charset="utf-8">
     <title></title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
-  <link rel="stylesheet" href="css/admincss.css">
+  <link rel="stylesheet" href="css/indexcss.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
 
   <script type="text/javascript">
-   // Variable to count number of attempts.
-  // Below function Executes on click of login button.
-      function Validate(un,pw){
-        //     var username = un.value;
-          //  var password = pw.value;
-    //  if ( username == "admin" && password == "12345"){
-      //      alert ("Login successfully");
-            window.open("admin.html");
-  // Redirecting to other page.
-
-      }
-  /*    else{
-
-            alert("Invalid Credentials ");
-
-
-         }
+  function validate()
+      {
+       if(document.getElementById("username").value == "admin" && document.getElementById("password").value == "1234" ))
+       {
+        alert( "validation success" );
+        window.location="admin.html";
        }
-     }*/
+       else
+       {
+        alert( "validation failed" );
+       }
+      }
   </script>
 
   </head>
   <body>
+
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark  nav-col navbar-default">
   <a class="navbar-brand" href="index.html">
     <img src="image/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
@@ -55,7 +57,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="about-d.html">About Department</a>
-          <a class="dropdown-item" href="#">Teacher Details</a>
+          <a class="dropdown-item" href="abt-teacher.html">Teacher Details</a>
 
       </li>
 
@@ -98,7 +100,7 @@
                   <button type="submit" class="btn btn-danger btn-sm btn-block" data-dismiss="modal">Cancel</button>
               </div>
               <div class="col-sm-6">
-                  <button  class="btn btn-primary btn-sm btn-block"  id="submit" onclick="Validate(username,password)">Login</button>
+                  <button  class="btn btn-primary btn-sm btn-block"  id="submit" onclick="validate()">Login</button>
               </div>
             </div>
           </div>
@@ -128,7 +130,7 @@
                     <label>
                       <input type="checkbox" name="" value="">Remember me
                     </label><br>
-                    <a href="tregister.html class="signup">Register</a>
+                    <a href="tregister.html" class="signup">Register</a>
                   </div>
                   </div>
                   <div class="modal-footer">
@@ -147,6 +149,107 @@
             </div>
           </div>
         </div>
+
+
+
+        <!--================Home Banner Area =================-->
+          <section class="home_banner_area">
+              <div class="banner_inner d-flex align-items-center">
+              	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+  				<div class="container">
+  					<div class="banner_content text-center">
+  						<img src="image/shap-1.png" alt="">
+  						<h4 style="color:black;">WELCOME</h4>
+  						<h3 style="color:#003366;">COMPUTER SCIENCE DEPARTMENT</h3>
+  						<img src="image/shap-2.png" alt="">
+  					</div>
+  				</div>
+              </div>
+          </section>
+          <!--================End Home Banner Area =================-->
+
+
+        <!--================ Journey Area =================-->
+        <section class="love_journey_area p_120">
+        	<div class="container">
+        		<div class="love_inner">
+        			<div class="main_title">
+        				<h1>Our Journey</h1>
+        			</div>
+        			<div class="love_js_items">
+        				<div class="love_js_item row">
+        					<div class="col-lg-7">
+								<div class="love_text_item">
+									<h4>Founded</h4>
+									<p>Dayananda Sagar College of Engineering started in <span style="font-size:25px;color:#003366">1979</span> is approved by All India Council for Technical Education (AICTE), Govt. of India and affiliated to Visvesvaraya Technological University.</p>
+
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="love_img"><img class="img-fluid" src="image/slider3.jpg" alt=""></div>
+							</div>
+        				</div>
+        				<div class="love_js_item right row">
+							<div class="col-lg-5">
+								<div class="love_img"><img class="img-fluid" src="image/12.jpg" alt=""></div>
+							</div>
+       						<div class="col-lg-7">
+								<div class="love_text_item">
+									<h4>Program</h4>
+									<p>Grants Received Rs 284 lakhs for 36 funded projects funded by ISRO, DST, DBT, DRDO.<br>
+Received A National Mission Project from Department of Science and Technology to implement “Indigenous Magnetic Resonance Imaging (IMRI).</p>
+								</div>
+							</div>
+        				</div>
+        				<div class="love_js_item row">
+        					<div class="col-lg-7">
+								<div class="love_text_item">
+									<h4>Autonomous</h4>
+									<p>In 2015, the college was granted autonomy. It is an ISO 9001:2008 certified institute, approved by AICTE and the University Grants Commission, and accredited by the National Assessment and Accreditation Council</p>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="love_img"><img class="img-fluid" src="image/6.jpg" alt=""></div>
+							</div>
+        				</div>
+        				<div class="love_js_item right row">
+							<div class="col-lg-5">
+								<div class="love_img"><img class="img-fluid" src="image/9.jpg" alt=""></div>
+							</div>
+       						<div class="col-lg-7">
+								<div class="love_text_item">
+									<h4>NBA and NBA Accredation</h4>
+									<p>APPROVED BY AICTE & UGC, ACCREDITED BY NAAC WITH 'A' GRADE.<br> ACCREDITED BY NBA in 2018</p>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Journey Area =================-->
+        <!--================Footer Area =================-->
+        <footer class="footer_area">
+        	<div class="container box_1620">
+        		<div class="footer_inner p_120">
+        			<img src="image/logo.png" alt="" width="70px">
+        			<ul class="list f_menu">
+        				<li><a href="index.html">Home</a></li>
+        				<li><a href="#">Admin Login</a></li>
+        				<li><a href="#">Teacher Login </a></li>
+        				<li><a href="#">About Teacher</a></li>
+        				<li><a href="about-d.html">About DEPARTMENT</a></li>
+
+        			</ul>
+        			<img src="image/footer.png" alt="" width="200px">
+       				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+
 
 
 
